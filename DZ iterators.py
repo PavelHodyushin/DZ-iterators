@@ -1,11 +1,10 @@
 class EvenNumbers:
 
     def __init__(self, start=0, end=1):
-        self.start = start
-        self.end = end
+        self.start = start-1
+        self.end = end-1
 
     def __iter__(self):
-        self.start = 0
         return self
 
     def __next__(self):
